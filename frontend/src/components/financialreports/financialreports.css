@@ -1,0 +1,25 @@
+.financial-reports-page,
+.financial-report-detail-page {
+  color: #10275d;
+}
+
+.financial-report-detail-page .report-statement-panel {
+  break-inside: avoid;
+}
+
+@media print {
+  .financial-report-detail-page {
+    padding: 12px;
+    background: #fff;
+  }
+
+  .financial-report-detail-page .back-link,
+  .financial-report-detail-page .report-actions {
+    display: none;
+  }
+
+  .financial-report-detail-page .report-statement-panel {
+    border-color: #cbd5e1;
+    box-shadow: none;
+  }
+}
